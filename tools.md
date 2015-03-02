@@ -4,8 +4,8 @@ title: Introduction to the Tools
 ---
 
 Every new discipline has tools that you need to be familiar with to get started.
-Those tools in Python are [Anaconda][] and [IPython Notebooks][].  This section
-introduces you to those tools.
+Those tools for data science in Python are [Anaconda][] and
+[IPython Notebooks][].  This section introduces you to those tools.
 
 
 ## Anaconda
@@ -32,8 +32,8 @@ Now you have an environment that includes the entire Anaconda stack inside it.
 
 > There's a lot more that conda can do, including exporting environments for you
 > to share with others, building packages, and more.  Rather than dive into
-> those, we'll leave that as an exercise to the reader.  A great place to start
-> [conda.io][conda].
+> those, we'll leave that as an exercise for the student.  A great place to
+> start  [conda.io][conda].
 
 
 ### Quick Note on `pip`
@@ -42,7 +42,9 @@ You can install *most* data science packages from Python using `conda intall`.
 You might come across a new package or something not specifically related to
 data science that you can't install using `conda`.  When that happens, you can
 rely on the standard Python installer: `pip`.  It's automatically available in
-any conda environment that has Python installed.
+any conda environment that has Python installed.  If you somehow end up with an
+environment that doesn't have it installed, you can install it via `conda
+install pip`.
 
 
 ## IPython Notebooks
@@ -77,23 +79,29 @@ notebook.  From the command line, run this command:
 Your default web browser should launch and load up `http://localhost:8888/tree`.
 It should look like this:
 
-> **TODO**
+> **TODO Screen Cap**
 
 Let's create a new one.  Click on the `New Notebook` button in the upper right.
+
+> **TODO Screen Cap**
+
 
 ### Notebook Basics
 
 This new interface is the place where all of your work is going to take place.
 Each notebook is made up a collection of cells.  You can run each cell
-individually or in combination with other cells.  Let's start with the basic
+individually or in combination with other cells.  Let's start with the basics
 and have it say hello world:
 
 ```python
 print("Hello, World!")
 ```
 
-If you click the play button in the toolbar that cell will run and display the
-result.  Notice that the empty brackets over to the left now have a `1` in them.
+Click the play button in the toolbar that cell will run and display the result.
+
+> **TODO Screen Cap**
+
+Notice that the empty brackets over to the left now have a `1` in them.
 That's to show you how many commands have been run in this notebook.
 
 Once you create a cell and run it, you can go edit it, then re-run it.  Click
