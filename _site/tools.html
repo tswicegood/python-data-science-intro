@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Introduction to Data Science - Using Python in the newsroom</title>
+    <meta name="description" content="Introduction to Data Science with Python" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <!-- Customisation  -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+
+</head>
+<body class="post-template page-template">
+
+    <nav class="main-nav clearfix">
+  <a class="back-button icon-arrow-left" href="/">Home</a>
+</nav>
+
+
+<main class="content" role="main">
+  <article class="post">
+
+    <h1 class="post-title">Introduction to the Tools</h1>
+
+    <section class="post-content">
+      <p>Every new discipline has tools that you need to be familiar with to get started.
+Those tools for data science in Python are <a href="http://continuum.io/downloads">Anaconda</a> and
+<a href="http://ipython.org/notebook.html">IPython Notebooks</a>.  This section introduces you to those tools.</p>
+
+<h2>Anaconda</h2>
+
+<p>Much of the scientific Python stack requires complicated, compiled code to run.
+Normal installation methods require you to compile tools like <a href="http://www.numpy.org/">Numpy</a> and
+<a href="http://pandas.pydata.org/">pandas</a> on your computer before you can use them.  Anaconda is a distribution
+of Python can comes with all of these tools ready to use.</p>
+
+<p>Anaconda ships with a tool call <a href="http://conda.io/"><code>conda</code></a> for managing your local
+packages and updating your code.  We&#39;re going to create an environment to do
+all of our work in:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> conda create --name nicar anaconda <span class="nv">python</span><span class="o">=</span>2
+<span class="go">... output from conda ...</span>
+<span class="gp">$</span> <span class="nb">source </span>activate nicar
+<span class="go">(nicar) $</span>
+</code></pre></div>
+<p>If you&#39;re on Windows, you don&#39;t have to include the <code>source</code>.</p>
+
+<p>Now you have an environment that includes the entire Anaconda stack inside it.</p>
+
+<blockquote>
+<p>There&#39;s a lot more that conda can do, including exporting environments for you
+to share with others, building packages, and more.  Rather than dive into
+those, we&#39;ll leave that as an exercise for the student.  A great place to
+start  <a href="http://conda.io/">conda.io</a>.</p>
+</blockquote>
+
+<h3>Quick Note on <code>pip</code></h3>
+
+<p>You can install <em>most</em> data science packages from Python using <code>conda install</code>.
+You might come across a new package or something not specifically related to
+data science that you can&#39;t install using <code>conda</code>.  When that happens, you can
+rely on the standard Python installer: <code>pip</code>.  It&#39;s automatically available in
+any conda environment that has Python installed.  If you somehow end up with an
+environment that doesn&#39;t have it installed, you can install it via <code>conda
+install pip</code>.</p>
+
+<h2>IPython Notebooks</h2>
+
+<p>A key companion to any scientist is their notebook.  It&#39;s the place where they
+work out their ideas, flesh out theories, and plan experiments.  Their killer
+feature is that they can be shared and read by other scientists.</p>
+
+<p>Like their analog counterparts, IPython notebooks (often referred to as <code>ipynb</code>
+files) allow you to capture your thoughts in one place including code that can
+be executed again and the output of them.</p>
+
+<p>Let&#39;s get started.  The first thing we need to do is create a directory where
+we can store all of our work.  I&#39;m going to call my directory <code>notebooks</code> in my
+home directory.  You can name it whatever you&#39;d like, but if you use a different
+name, make sure to adjust the commands appropriately.</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">(nicar) $ mkdir notebooks</span>
+<span class="go">(nicar) $ cd notebooks</span>
+<span class="go">(nicar) ~/notebooks/ $</span>
+</code></pre></div>
+<p>Now that you have that directory created, it&#39;s time to create your first
+notebook.  From the command line, run this command:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">(nicar) ~notebooks/ $ ipython notebook</span>
+<span class="gp">#</span> TODO include output
+</code></pre></div>
+<p>Your default web browser should launch and load up <code>http://localhost:8888/tree</code>.
+It should look like this:</p>
+
+<blockquote>
+<p><strong>TODO Screen Cap</strong></p>
+</blockquote>
+
+<p>Let&#39;s create a new one.  Click on the <code>New Notebook</code> button in the upper right.</p>
+
+<blockquote>
+<p><strong>TODO Screen Cap</strong></p>
+</blockquote>
+
+<h3>Notebook Basics</h3>
+
+<p>This new interface is the place where all of your work is going to take place.
+Each notebook is made up a collection of cells.  You can run each cell
+individually or in combination with other cells.  Let&#39;s start with the basics
+and have it say hello world:</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello, World!&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Click the play button in the toolbar that cell will run and display the result.</p>
+
+<blockquote>
+<p><strong>TODO Screen Cap</strong></p>
+</blockquote>
+
+<p>Notice that the empty brackets over to the left now have a <code>1</code> in them.
+That&#39;s to show you how many commands have been run in this notebook.</p>
+
+<p>Once you create a cell and run it, you can go edit it, then re-run it.  Click
+on the <code>print</code> statement again and edit it to simply assign a variable:</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">who</span> <span class="o">=</span> <span class="s">&quot;World&quot;</span>
+</code></pre></div>
+<p>Click play again and notice that the <code>1</code> changes to a <code>2</code> and the output went
+away.  The output disappeared because there is no output when you assign a
+variable.  Go back and edit the cell again to include the variable <code>who</code> on a
+line by itself, then re-run it.</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">who</span> <span class="o">=</span> <span class="s">&quot;World&quot;</span>
+<span class="n">who</span>
+</code></pre></div>
+<p>This shows two things:</p>
+
+<ul>
+<li>Variables by themselves are outputted if they&#39;re the last item in the cell</li>
+<li>Each cell can be multiple lines!</li>
+</ul>
+
+<p>Now let&#39;s go down to the cell below our first one and add another <code>print</code>
+statement like this:</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="s">&quot;Hello, {}!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">who</span><span class="p">))</span>
+</code></pre></div>
+<p>This time when you click play on this cell, you notice that it pulls the
+variable <code>who</code> from the first cell and uses it inside the <code>print</code> function.
+Variables are shared throughout a notebook the same way they are when you write
+a script into a single file.</p>
+
+<h3>Other Types of Cells</h3>
+
+<p>You&#39;re not limited to just Python cells.  You can also keep track of notes using
+<a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>.  To do that, select the current empty cell below your code, then
+select the dropdown from the toolbar that says <code>Code</code> and switch that to
+<code>Markdown</code>.  There you can add whatever you like:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># Notes!
+
+This is plain Markdown text.  You can place [links][1], *emphasis*,
+and so on.  When you render this block by hitting the play button it
+will render as full Markdown.
+
+[1]: http://github.com/
+</code></pre></div>
+    </section>
+  </article>
+</main>
+
+    <footer class="site-footer clearfix">
+      <section class="copyright">
+        <a href="/">Introduction to Data Science</a> &copy;
+               &bull; All rights reserved.
+        
+      </section>
+      <section class="poweredby">Made with Jekyll using
+        <a href="http://github.com/rosario/kasper">Kasper theme</a>
+      </section>
+    </footer>
+
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>Introduction to Data Science</title>
+    <link>http://tswicegood.github.io/python-data-science-intro</link>
+    <description>Using Python in the newsroom</description>
+    <pubDate>Sun, 10 Nov 2013 05:18:00 -0500</pubDate>
+    <item>
+      <title>Welcome to Jekyll!</title>
+      <link>http://tswicegood.github.io/python-data-science-intro/thriller/comedy/horror/2013/11/10/welcome-to-jekyll.html</link>
+      <description>&lt;p&gt;You&amp;#39;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
+To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 10 Nov 2013 05:18:00 -0500</pubDate>
+      <dc:date>2013-11-10T05:18:00-05:00</dc:date>
+    </item>
+    <dc:date>2013-11-10T05:18:00-05:00</dc:date>
+  </channel>
+</rss>

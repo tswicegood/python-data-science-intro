@@ -38,7 +38,7 @@ Now you have an environment that includes the entire Anaconda stack inside it.
 
 ### Quick Note on `pip`
 
-You can install *most* data science packages from Python using `conda intall`.
+You can install *most* data science packages from Python using `conda install`.
 You might come across a new package or something not specifically related to
 data science that you can't install using `conda`.  When that happens, you can
 rely on the standard Python installer: `pip`.  It's automatically available in
