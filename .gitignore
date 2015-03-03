@@ -1,2 +1,7 @@
 *.zip
 njaccidents.csv
+_site
+.DS_Store
+*.swp
+.sass-cache
+
