@@ -121,7 +121,7 @@ Finally, we can hand `myframe` to the next exercise for aggregating, but we migh
 myframe.to_csv('smallertab.csv')
 ```
 
-Now, we're ready to start [digging deeper][].
+Now, we're ready to [dig deeper][] into pandas.
 
 
 

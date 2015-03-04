@@ -154,6 +154,7 @@ select the dropdown from the toolbar that says `Code` and switch that to
 
     [1]: http://github.com/
 
+Now, you're ready to start [exploring Pandas].
 
 [Anaconda]: http://continuum.io/downloads
 [conda]: http://conda.io/
@@ -161,3 +162,4 @@ select the dropdown from the toolbar that says `Code` and switch that to
 [Markdown]: http://daringfireball.net/projects/markdown/syntax
 [Numpy]: http://www.numpy.org/
 [Pandas]: http://pandas.pydata.org/
+[exploring Pandas]: ./pandas.html
