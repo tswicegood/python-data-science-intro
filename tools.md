@@ -13,10 +13,10 @@ Those tools for data science in Python are [Anaconda][] and
 Much of the scientific Python stack requires complicated, compiled code to run.
 Normal installation methods require you to compile tools like [Numpy][] and
 [pandas][] on your computer before you can use them.  Anaconda is a distribution
-of Python can comes with all of these tools ready to use.
+of Python that comes with all of these tools ready to use.
 
 Anaconda ships with a tool call [`conda`][conda] for managing your local
-packages and updating your code.  We're going to create an environment to do
+packages and updating your code. We're going to create an environment to do
 all of our work in:
 
 ```console
@@ -33,7 +33,7 @@ Now you have an environment that includes the entire Anaconda stack inside it.
 > There's a lot more that conda can do, including exporting environments for you
 > to share with others, building packages, and more.  Rather than dive into
 > those, we'll leave that as an exercise for the student.  A great place to
-> start  [conda.io][conda].
+> start is [conda.io][conda].
 
 
 ### Quick Note on `pip`
@@ -141,8 +141,10 @@ a script into a single file.
 
 ### Other Types of Cells
 
-You're not limited to just Python cells.  You can also keep track of notes using
-[Markdown][].  To do that, select the current empty cell below your code, then
+You're not limited to just Python in the cells. Through the magic of iPython, you can use bash commands like ```ls``` to list the contents of a directory or ```cd ..``` to navigate to another folder. 
+
+Or you can keep track of notes using
+[Markdown][]. To do that, select the current empty cell below your code, then
 select the dropdown from the toolbar that says `Code` and switch that to
 `Markdown`.  There you can add whatever you like:
 
@@ -154,7 +156,7 @@ select the dropdown from the toolbar that says `Code` and switch that to
 
     [1]: http://github.com/
 
-Now, you're ready to start [exploring Pandas].
+Now, you're ready to start [exploring data with pandas].
 
 [Anaconda]: http://continuum.io/downloads
 [conda]: http://conda.io/
@@ -162,4 +164,4 @@ Now, you're ready to start [exploring Pandas].
 [Markdown]: http://daringfireball.net/projects/markdown/syntax
 [Numpy]: http://www.numpy.org/
 [Pandas]: http://pandas.pydata.org/
-[exploring Pandas]: ./pandas.html
+[exploring data with pandas]: ./pandas.html
