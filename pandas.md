@@ -5,13 +5,15 @@ title: Pandas, A First Look
 
 Now that we're comfortable with our coding environment, and we've dabbled with the iPython notebook, it's time to dive into [pandas][], the Python library created explicitly for data analysis. 
 
+*Our iPython notebooks for this lesson are in our [Github repo][]. You'll want to start with [this one][] to follow along. Download the text, save it to an ipynb file in the same directory as [the data][] and open it in iPython Notebook.*
+
 First in our interactive iPython notebook, we'll import pandas and call it "pd", a convention of pandas users that you'll quickly grow accustomed to.
 
 ```python
 import pandas as pd
 ```
 
-Today, we're going to work with a fairly large text file of [car accident data] from the New Jersey Department of Transportation. This file contains reports from accidents in the Garden State between 2008 and 2013. The data, originally filed in handwritten reports by state troopers and then typed into a fixed-width database by clerks, is both decently large and very messy. (As an aside, if you're really interested in the genesis of this particular file, you can browse [the makefile][] we used to create it.)
+Today, we're going to work with a fairly large text file of [car accident data][] from the New Jersey Department of Transportation. This file contains reports from accidents in the Garden State between 2008 and 2013. [The data][], originally filed in handwritten reports by state troopers and then typed into a fixed-width database by clerks, is both decently large and very messy. (As an aside, if you're really interested in the genesis of this particular file, you can browse [the makefile][] we used to create it.)
 
 Our analysis today will not be comprehensive or particularly accurate, but working with 1.7 million rows of dirty data is a pretty good way to illustrate what you can do with pandas and how it's going to make your life easier.
 
@@ -127,6 +129,9 @@ Ready to [dig deeper][] into pandas? Let's go.
 
 
 [pandas]: http://pandas.pydata.org/
+[Github repo]: https://github.com/tswicegood/python-data-science-intro
+[this one]: https://github.com/tswicegood/python-data-science-intro/blob/gh-pages/Python%20for%20Data%20Analysis%20at%20NICAR15.ipynb
+[the data]: https://s3.amazonaws.com/nicar15/njaccidents.csv
 [car accident data]: http://www.state.nj.us/transportation/refdata/accident/
 [the makefile]: ./makefile
 [many kinds of sources]: http://pandas.pydata.org/pandas-docs/dev/io.html
