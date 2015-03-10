@@ -12,7 +12,7 @@ If you were reporting on car accidents in your state, what would you want to kno
 * How many people are involved in car accidents?
 * What counties might be outliers in terms of deaths and injuries?
 
-We'll start by reading our date into our DataFrame. Then we'll filter it and do a few group-bys, which should be familiar if you've ever worked with SQL. Finally, we'll create smaller DataFrames of this aggregated data to visualize.
+We'll start by reading our data into our DataFrame. Then we'll filter it and do a few group-bys, which should be familiar if you've ever worked with SQL. Finally, we'll create smaller DataFrames of this aggregated data to visualize.
 
 One of the cleaning tasks we'll have to deal with is the format of the 'Crash Date' field, so we might as well import Python's standard `datetime` module now.
 
@@ -77,6 +77,16 @@ newframe['Total Involved']=newframe['Total Killed'] + newframe['Total Injured']
 ```
 
 With this 'Total Involved' value, we can create a histogram later.
+
+Finally, let's create a DataFrame of all the columns aggregated by county so we can make a scatter plot of the counties by total killed and pedestrians killed.
+
+With this 'Total Involved' value, we can create a histogram later.
+
+```python
+newframe['Crash Day Of Week']=newframe['Crash Day Of Week'].map(str.strip)
+```
+
+Here, we're using .map() to call the pandas built-in strip method on its string method across the column, which is a Series object.
 
 Finally, let's create a DataFrame of all the columns aggregated by county so we can make a scatter plot of the counties by total killed and pedestrians killed.
 
