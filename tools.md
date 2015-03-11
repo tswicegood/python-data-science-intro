@@ -49,9 +49,7 @@ install pip`.
 Also, if you don't want to try the Anaconda distribution, you can still work with iPython, pandas and bokeh.
 You can install each of them via pip in your own virtualenv:
 
-```pip install ipython```
-```pip install pandas```
-```pip install bokeh```
+```pip install ipython pandas bokeh```
 
 This will handle all of the dependencies for pandas, but you will need to have a compiler installed. On a Mac,
 you can install the Command Lines Tools for XCode by downloading it at [Apple's developer site].
