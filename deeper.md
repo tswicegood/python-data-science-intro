@@ -94,4 +94,4 @@ Finally, let's create a DataFrame of all the columns aggregated by county so we 
 countyframe = newframe.groupby('County Name').sum()
 ```
 
-With these new DataFrames, we have several slices of our data. Let's see what it looks like by visualizing it.
+With these new DataFrames, we have several slices of our data. Let's see what it looks like by visualizing it with the ```bokeh``` library.

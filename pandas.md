@@ -3,9 +3,9 @@ layout: page
 title: Pandas, A First Look
 ---
 
-Now that we're comfortable with our coding environment, and we've dabbled with the iPython notebook, it's time to dive into [pandas][], the Python library created explicitly for data analysis. 
+Now that we're comfortable with our coding environment, and we've dabbled with the iPython notebook, it's time to dive into [pandas][], the Python library created explicitly for data analysis. This library, and this lesson, are intended to be used interactively, though they can also be saved in functions and scripts for later use.
 
-*Our iPython notebooks for this lesson are in our [Github repo][]. You'll want to start with [this one][] to follow along. Download the text, save it to an ipynb file in the same directory as [the data][] and open it in iPython Notebook.*
+*Our iPython notebooks for this lesson are in our [Github repo][]. You'll want to start with [this one][] to follow along. Download the text, save it to an ipynb file in the same directory as [the data][] and open it in iPython Notebook. You can also [download it or view it here][].*
 
 First in our interactive iPython notebook, we'll import pandas and call it "pd", a convention of pandas users that you'll quickly grow accustomed to.
 
@@ -137,3 +137,4 @@ Ready to [dig deeper][] into pandas? Let's go.
 [many kinds of sources]: http://pandas.pydata.org/pandas-docs/dev/io.html
 [with a CSV]: http://pandas.pydata.org/pandas-docs/dev/generated/pandas.io.parsers.read_csv.html
 [dig deeper]: ./deeper.html
+[download it or view it here]: http://nbviewer.ipython.org/github/tswicegood/python-data-science-intro/blob/gh-pages/Python%20for%20Data%20Analysis%20at%20NICAR15.ipynb

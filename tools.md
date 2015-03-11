@@ -46,6 +46,16 @@ any conda environment that has Python installed.  If you somehow end up with an
 environment that doesn't have it installed, you can install it via `conda
 install pip`.
 
+Also, if you don't want to try the Anaconda distribution, you can still work with iPython, pandas and bokeh.
+You can install each of them via pip in your own virtualenv:
+
+```pip install ipython```
+```pip install pandas```
+```pip install bokeh```
+
+This will handle all of the dependencies for pandas, but you will need to have a compiler installed. On a Mac,
+you can install the Command Lines Tools for XCode by downloading it at [Apple's developer site].
+
 
 ## IPython Notebooks
 
@@ -165,3 +175,4 @@ Now, you're ready to start [exploring data with pandas].
 [Numpy]: http://www.numpy.org/
 [Pandas]: http://pandas.pydata.org/
 [exploring data with pandas]: ./pandas.html
+[Apple's developer site]: https://developer.apple.com/downloads/
